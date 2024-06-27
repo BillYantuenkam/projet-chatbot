@@ -1,0 +1,11 @@
+# Python
+*.pyc
+__pycache__/
+env/
+
+# Config
+config.yaml
+
+# IDEs
+.vscode/
+.idea/
