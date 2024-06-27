@@ -1,0 +1,6 @@
+api_keys:
+  some_service: 'your_api_key_here'
+database:
+  uri: 'your_database_uri_here'
+chatbot:
+  welcome_message: 'Bonjour, comment puis-je vous aider aujourd\'hui ?'
