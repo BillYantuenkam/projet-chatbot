@@ -1,9 +1,8 @@
-# projet-chatbot
 # Chatbot de Support Informatique
 
 ## Introduction
 
-Ce projet consiste en un chatbot développé en Python, destiné à assister le service informatique dans le traitement des problèmes techniques remontés par les utilisateurs. Le chatbot utilise des techniques de traitement du langage naturel (NLP) pour comprendre et répondre aux requêtes des utilisateurs, facilitant ainsi la résolution rapide et efficace des problèmes courants.
+Ce projet consiste en un chatbot développé en JavaScript, destiné à assister le service informatique dans le traitement des problèmes techniques remontés par les utilisateurs. Le chatbot utilise des techniques de traitement du langage naturel (NLP) pour comprendre et répondre aux requêtes des utilisateurs, facilitant ainsi la résolution rapide et efficace des problèmes courants.
 
 ## Fonctionnalités
 
@@ -17,8 +16,8 @@ Ce projet consiste en un chatbot développé en Python, destiné à assister le 
 
 ### Prérequis
 
-- Python 3.7 ou plus récent
-- pip (gestionnaire de paquets Python)
+- Node.js 12 ou plus récent
+- npm (gestionnaire de paquets Node.js)
 
 ### Étapes d'Installation
 
@@ -28,29 +27,25 @@ Ce projet consiste en un chatbot développé en Python, destiné à assister le 
     cd chatbot-support-informatique
     ```
 
-2. **Créer un environnement virtuel (optionnel mais recommandé)** :
-
-3. 
+2. **Installer les dépendances** :
     ```sh
-    python -m venv env
-    source env/bin/activate  # Pour les utilisateurs Unix/Mac
-    .\env\Scripts\activate   # Pour les utilisateurs Windows
-    ```
-
-4. **Installer les dépendances** :
-    ```sh
-    pip install -r requirements.txt
+    npm install
     ```
 
 ## Configuration
 
-Avant de lancer le chatbot, assurez-vous de configurer les paramètres nécessaires dans le fichier `config.yaml` (si applicable) :
+Avant de lancer le chatbot, assurez-vous de configurer les paramètres nécessaires dans le fichier `config.json` (si applicable) :
 
-```yaml
-api_keys:
-  some_service: 'your_api_key_here'
-database:
-  uri: 'your_database_uri_here'
-chatbot:
-  welcome_message: 'Bonjour, comment puis-je vous aider aujourd\'hui ?'
+```json
+{
+  "api_keys": {
+    "some_service": "your_api_key_here"
+  },
+  "database": {
+    "uri": "your_database_uri_here"
+  },
+  "chatbot": {
+    "welcome_message": "Bonjour, comment puis-je vous aider aujourd'hui ?"
+  }
+}
 
